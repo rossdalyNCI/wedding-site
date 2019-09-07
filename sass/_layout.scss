@@ -1,0 +1,28 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark); // ) in the x axis, 2rem in the Y axis and 6rem for the blur(for the container)
+    min-height: 50rem;
+}
+
+.header {
+    height: 7rem; // 70px
+    background-color: #fff;
+    border-bottom: var(--color-grey-light-2);
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%; // grow 0, shrink 0 but keep the width at 18%
+}
+
+.hotel-view {
+    background-color: #fff;
+    background-color: orangered;
+    flex: 1; // should grow over all the available space it can
+}
