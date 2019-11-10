@@ -366,7 +366,7 @@ body {
   border: 4px solid #f7f2e8;
 }
 
-.timeline-line:before {
+.timeline-line-wrapper:before {
   background-color: #f7f2e8;
   content: "";
   position: absolute;
