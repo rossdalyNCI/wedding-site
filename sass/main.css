@@ -19,6 +19,7 @@ Grey dark 3: #999
   --color-primary: #eb2f64;
   --color-primary-light: #FF3366;
   --color-primary-dark: #BA265D;
+  --color-timeline-cream: #FFA080;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -319,6 +320,61 @@ body {
   line-height: 1.4;
   text-transform: none;
   letter-spacing: normal;
+}
+
+.timeline-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.timeline-container-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.timeline {
+  position: relative;
+  padding: 5em 0;
+  margin-bottom: 8px;
+}
+
+.timeline-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 20;
+  margin-left: -7px;
+}
+
+.timeline-top:before {
+  background-color: var(--color-timeline-cream);
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  z-index: 20;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  border: 4px solid #f7f2e8;
+}
+
+.timeline-line:before {
+  background-color: #f7f2e8;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  background: #fff7f7;
 }
 
 .logo {
