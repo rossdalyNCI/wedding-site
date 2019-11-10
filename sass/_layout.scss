@@ -30,3 +30,30 @@
     background-color: orangered;
     flex: 1; // should grow over all the available space it can
 }
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 30px;
+}
+
+.page-strip {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.page-strip-margin-bottom {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.page-strip-lg-top-padding {
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+
+.page-strip-cream-bg {
+    background-color: var(--color-cream-bg-1);
+}

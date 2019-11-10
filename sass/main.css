@@ -26,7 +26,11 @@ Grey dark 3: #999
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+  --color-grey-dark-3: #808080;
   --color-white: #fff;
+  --color-cream-bg-1: #f4f4f4;
+  --color-cream-bg-2: #f9f9f9;
+  --color-text-dark-1: #252920;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
 }
 
@@ -52,12 +56,186 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--color-grey-dark-2);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark)));
-  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  color: var(--color-text-dark-1);
+  background-color: var(--color-white);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.masthead-container {
+  background-size: 1600px auto,auto;
+  padding: 100px 0 0 0;
+  background-color: transparent;
+  background-image: url("../img/green_leaves.png");
+  background-position: center top,center center;
+  background-repeat: no-repeat,no-repeat;
+}
+
+.name-vertical-top {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.large-name {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  font-size: 42.400000000000006px;
+}
+
+.name-seperator {
+  font-family: 'Great Vibes', cursive;
+  font-size: 24.4px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.5;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.name-vertical-bottom {
+  margin-top: 24px;
+}
+
+.navbar-container {
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 1.9px;
+  font-size: 19.599999999999998px;
+  background-color: transparent;
+}
+
+.navbar-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.navbar-list-item {
+  margin: 0 15px;
+  padding: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: var(--color-text-dark-1);
+}
+
+.main-image {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 8px #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.message-container {
+  margin-bottom: 20px;
+}
+
+.message-title {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+  font-size: 19.6px;
+  color: var(--color-text-dark-1);
+}
+
+.message-date {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.graphic-container {
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+.small-graphic {
+  display: inline-block;
+  width: 516px;
+  height: 183px;
+  background-image: url(../img/green-flower.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: -50px;
+}
+
+.about-title-container {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.about-title {
+  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.about-body-container {
+  text-align: center;
+}
+
+.about-body {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--color-grey-dark-3);
 }
 
 .logo {
@@ -237,5 +415,32 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 30px;
+}
+
+.page-strip {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.page-strip-margin-bottom {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.page-strip-lg-top-padding {
+  padding-top: 100px;
+  margin-bottom: 0;
+}
+
+.page-strip-cream-bg {
+  background-color: var(--color-cream-bg-1);
 }
 /*# sourceMappingURL=main.css.map */

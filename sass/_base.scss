@@ -29,8 +29,13 @@ Grey dark 3: #999
     --color-grey-dark-1: #333;
     --color-grey-dark-2: #777;
     --color-grey-dark-3: #999;
+    --color-grey-dark-3: #808080;
 
     --color-white: #fff;
+    --color-cream-bg-1: #f4f4f4;
+    --color-cream-bg-2: #f9f9f9;
+
+    --color-text-dark-1: #252920;
 
     --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
 }
@@ -55,10 +60,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    color: var(--color-grey-dark-2);
-    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    color: var(--color-text-dark-1);
+    background-color: var(--color-white);
     background-size: cover;
     background-repeat: no-repeat;  
-    min-height: 100vh;
-    
+    min-height: 100vh;  
 }

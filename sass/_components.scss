@@ -1,4 +1,168 @@
 ////////////////////////
+// MASTHEAD
+.masthead-container {
+    background-size: 1600px auto,auto;
+    padding: 100px 0 0 0;
+    background-color: transparent;
+    background-image: url("../img/green_leaves.png");
+    background-position: center top,center center;
+    background-repeat: no-repeat,no-repeat;
+}
+
+.name-vertical-top {
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.large-name {
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    font-size: 42.400000000000006px;
+}
+
+.name-seperator {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24.4px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.5;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.name-vertical-bottom {
+    margin-top: 24px;
+}
+
+////////////////////////
+// Navbar
+.navbar-container {
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 1.9px;
+    font-size: 19.599999999999998px;
+    background-color: transparent;
+}
+
+.navbar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.navbar-list-item {
+    margin: 0 15px;
+    padding: 0;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--color-text-dark-1);
+}
+
+////////////////////////
+// Main-Image
+.main-image {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 8px #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+
+////////////////////////
+// Message-strip
+.message-container {
+    margin-bottom: 20px;
+}
+
+.message-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+    font-size: 19.6px;
+    color: var(--color-text-dark-1);
+}
+
+.message-date {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.graphic-container {
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.small-graphic {
+    display: inline-block;
+    width: 516px;
+    height: 183px;
+    background-image: url(../img/green-flower.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: -50px;
+}
+
+////////////////////////
+// About
+.about-title-container {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.about-title {
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.about-body-container {
+    text-align: center;
+}
+
+.about-body {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--color-grey-dark-3);
+}
+
+
+////////////////////////
 // LOGO
 
 .logo {
