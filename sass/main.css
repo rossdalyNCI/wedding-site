@@ -192,6 +192,19 @@ body {
   letter-spacing: normal;
 }
 
+.message-body {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--color-grey-dark-3);
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
 .graphic-container {
   text-align: center;
   margin-bottom: -50px;
@@ -225,6 +238,7 @@ body {
 
 .about-body-container {
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .about-body {
@@ -236,6 +250,75 @@ body {
   text-transform: none;
   letter-spacing: normal;
   color: var(--color-grey-dark-3);
+}
+
+.about-frame-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.frame-overlay {
+  z-index: 2;
+}
+
+.frame-picture {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  z-index: 1;
+}
+
+.frame-img {
+  width: 483px;
+  height: 493px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.small-graphic-2 {
+  display: inline-block;
+  width: 516px;
+  height: 183px;
+  background-image: url(../img/green-flower-line.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: -50px;
+}
+
+.timeline-title-container {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.timeline-title {
+  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .logo {
@@ -442,5 +525,11 @@ body {
 
 .page-strip-cream-bg {
   background-color: var(--color-cream-bg-1);
+}
+
+.page-strip-gradient {
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, white), to(#fafafa));
+  background: linear-gradient(0deg, white 80%, #fafafa 100%);
 }
 /*# sourceMappingURL=main.css.map */
