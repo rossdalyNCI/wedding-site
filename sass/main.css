@@ -640,6 +640,29 @@ body {
   margin-right: 1rem;
 }
 
+.footer {
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  text-decoration: none;
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -699,6 +722,10 @@ body {
   text-align: center;
 }
 
+.page-strip--cream-bg {
+  background-color: var(--color-cream-bg-1);
+}
+
 .page-strip-margin-bottom {
   margin-bottom: 30px;
   text-align: center;
@@ -707,10 +734,6 @@ body {
 .page-strip-lg-top-padding {
   padding-top: 100px;
   margin-bottom: 0;
-}
-
-.page-strip-cream-bg {
-  background-color: var(--color-cream-bg-1);
 }
 
 .page-strip-gradient {
