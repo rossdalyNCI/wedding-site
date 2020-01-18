@@ -377,6 +377,26 @@ body {
   background: #fff7f7;
 }
 
+.timeline-icon {
+  position: absolute;
+  background-color: #f7f2e8;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 74px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 35px;
+}
+
+.timeline-icon__icon {
+  color: #FFA080;
+}
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
