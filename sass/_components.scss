@@ -140,6 +140,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     margin-bottom: -50px;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        width: 100%;
+    }
 }
 
 ////////////////////////
@@ -187,10 +191,23 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    max-width: unset;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        width: 100%;
+        max-width: 365px;
+    }
 }
 
 .frame-overlay {
     z-index: 2;
+}
+
+.frame-overlay-source {
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    min-width: 319px;
 }
 
 .frame-picture {
@@ -198,12 +215,28 @@
     bottom: 20px;
     left: 30px;
     z-index: 1;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        top: 10px;
+        left: 4px;
+        bottom: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        min-width: 275px;
+    }
 }
 
 .frame-img {
     width: 483px;
     height: 493px;
     object-fit: cover;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        width: 100%;
+        height: auto;
+        max-height: 294px;
+    }
 }
 
 ////////////////////////
@@ -217,6 +250,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     margin-bottom: -50px;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        width: 100%;
+    }
 }
 
 .timeline-title-container {
@@ -276,6 +313,26 @@
     }
 }
 
+@media only screen and (max-width: 519px) and (min-width: 320px) {
+    .timeline-top {       
+        left: 10%;
+    
+        &:before {
+            background-color: var(--color-timeline-cream);
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            z-index: 20;
+            display: block;
+            width: 18px;
+            height: 18px;
+            border-radius: 10px;
+            border: 4px solid #f7f2e8;
+        }
+    }
+}
+
 .timeline-line-wrapper {
     &:before {
         background-color: #f7f2e8;
@@ -286,6 +343,21 @@
         height: 100%;
         width: 4px;
         background: #fff7f7;
+    }
+}
+
+@media only screen and (max-width: 519px) and (min-width: 320px) {
+    .timeline-line-wrapper {
+        &:before {
+            background-color: #f7f2e8;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 10%;
+            height: 100%;
+            width: 4px;
+            background: #fff7f7;
+        }
     }
 }
 
@@ -322,8 +394,15 @@
     }
 }
 
+@media only screen and (max-width: 519px) and (min-width: 320px) {
+    .timeline-icon {
+        left: 10%;
+    }
+}
+
 .timeline-content-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -336,14 +415,36 @@
     }
 }
 
+@media only screen and (max-width: 519px) and (min-width: 320px) {
+    .timeline-content-container {
+        align-items: flex-end;
+        position: relative;
+        flex-direction: column;
+    }
+}
+
 .timeline-content-left {
     width: 468px;
     height: 295px;
     padding-right: 40px;
+    margin-bottom: unset;
 
     &--reverse {
         padding-right: unset;
         padding-left: 40px;
+    }
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 519px) and (min-width: 320px) {
+    .timeline-content-left {
+        width: 275px;
+        height: 173px;
+        margin-bottom: 20px;
+        padding-right: 0;
     }
 }
 
@@ -352,7 +453,12 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
-    box-shadow: 1px 10px 15px rgba(0,0,0,0.25);
+    box-shadow: 1px 10px 15px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+
+    &:hover {       
+        box-shadow: 1px 10px 15px rgba(0,0,0,0.25);
+    }
 }
 
 .timeline-content-right {
@@ -363,6 +469,18 @@
         text-align: right;
         padding-left: unset;
         padding-right: 40px;
+
+        @media only screen and (max-width: 519px) and (min-width: 320px) {
+            padding-right: 0;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 519px) and (min-width: 320px) {
+    .timeline-content-right {
+        max-width: 275px;
+        padding-left: 0;
     }
 }
 
@@ -372,6 +490,14 @@
     font-weight: 400;
     line-height: 50px;
     margin-bottom: 20px;
+
+    &--reverse {
+        font-size: 40px;
+
+        @media only screen and (max-width: 519px) and (min-width: 320px) {
+            font-size: 35px;
+        }
+    }
 }
 
 .timeline-content-details {
@@ -388,6 +514,10 @@
 
     &--reverse {
         text-align: right;
+
+        @media only screen and (max-width: 519px) and (min-width: 320px) {
+            text-align: left;
+        }
     }
 }
 
@@ -403,6 +533,52 @@
 
     &--reverse {
         text-align: right;
+
+        @media only screen and (max-width: 519px) and (min-width: 320px) {
+            text-align: left;
+        }
+    }
+}
+
+.timeline-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    z-index: 20;
+    margin-left: -7px;
+
+    &:before {
+        background-color: var(--color-timeline-cream);
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        z-index: 20;
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        border: 4px solid #f7f2e8;
+    }
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        left: 10%;
+    }
+}
+
+.small-graphic-3 {
+    display: inline-block;
+    width: 516px;
+    height: 183px;
+    background-image: url(../dist/img/orange-flower.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: -50px;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        width: 100%;
     }
 }
 
@@ -540,11 +716,36 @@
 .footer-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    margin-bottom: 5px;
+}
+
+.footer-title-text {
+    font-size: 11px;
+}
+
+.footer-copyright {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 273px;
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    width: 100%;
+    max-width: 273px;
 }
 
 .footer-list {
     display: inline-flex;
     list-style: none;
     text-decoration: none;
-    
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }

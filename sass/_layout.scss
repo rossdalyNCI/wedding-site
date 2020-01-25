@@ -58,8 +58,16 @@
     margin-bottom: 0;
 }
 
+.page-strip-medium-top-padding {
+    padding-top: 70px;
+}
+
 
 .page-strip-gradient {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 80%, rgba(250,250,250,1) 100%);
+}
+
+.page-strip-margin-top {
+    margin-top: 35px;
 }
