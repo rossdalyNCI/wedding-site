@@ -53,9 +53,22 @@
     text-align: center;
 }
 
+.page-strip-margin-bottom-slight {
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        margin-bottom: 10px;
+    }
+}
+
 .page-strip-lg-top-padding {
     padding-top: 100px;
     margin-bottom: 0;
+
+    @media only screen and (max-width: 519px) and (min-width: 320px) {
+        padding-top: 70px;
+    }
 }
 
 .page-strip-medium-top-padding {
