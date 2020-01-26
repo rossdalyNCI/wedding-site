@@ -119,6 +119,8 @@
     box-sizing: border-box;
     border: solid 8px #fff;
     box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+    min-height: 212px;
+    object-fit: cover;
 
     &--location,
     &--schedule,
@@ -716,6 +718,10 @@
         box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.15);
         border-radius: 40px;
         overflow: hidden;
+
+        @media only screen and (max-width: 519px) and (min-width: 320px) {
+            height: 480px;
+        }
     }
 
     &--padding {
