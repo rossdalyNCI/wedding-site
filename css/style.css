@@ -209,6 +209,9 @@ body {
   border: solid 8px #fff;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  min-height: 212px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-image--location, .main-image--schedule, .main-image--travel {
@@ -896,6 +899,12 @@ body {
           box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.15);
   border-radius: 40px;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 519px) and (min-width: 320px) {
+  .location-item--img {
+    height: 480px;
+  }
 }
 
 .location-item--padding {
